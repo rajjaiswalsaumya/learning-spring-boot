@@ -1,4 +1,4 @@
-package org.cdac.config;
+package org.cdac.configs;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
@@ -6,11 +6,10 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  * Created by raj on 10/09/14.
  */
 
-@ConfigurationProperties(prefix = "watcher",ignoreUnknownFields = true)
+@ConfigurationProperties(prefix = "watcher", ignoreUnknownFields = true)
 public class DirectoryConfiguration {
 
     private String errorDir;
-
     private String indexedDir;
     private String unIndexedDir;
 
